@@ -29,11 +29,12 @@ import plotly.io as pio
 import plotly.express as px
 import pandas as pd
 
-print(f"Plotly version: {plotly.__version__}")
-print(f"Pandas version: {pandas.__version__}")
+print(f"Plotly version: {pio.__version__}")
+print(f"Pandas version: {pd.__version__}")
 print(f"Matplotlib version: {matplotlib.__version__}")
 
 # Import libraries for data visualization
+import matplotlib
 import matplotlib.pyplot as plt
 
 # Importing Plotly's offline verision 
@@ -41,7 +42,7 @@ import plotly.offline as py
 py.init_notebook_mode(connected=True)
 
 # Initialize Plotly
-pio.renderers.default = 'colab'
+pio.renderers.default = 'notebook'
 
 # STEP 2: IMPORT DATASETS
 """
