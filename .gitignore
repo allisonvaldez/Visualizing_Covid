@@ -1,0 +1,43 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache
+
+# Ignore Checkpoints
+**/*.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore Python bytecode files
+*.pyc
+# Ignore Python egg files
+*.egg
+
+# Ignore Python distribution files
+*.egg-info/
+
+# Ignore Python virtual environment directories
+venv/
+.env/
+*.bak
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore Jupyter Notebook files
+*.ipynb
+
+# Ignore data files not in the core project data
+/data/raw/
+/data/processed/
