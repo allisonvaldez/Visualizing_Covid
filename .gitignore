@@ -1,5 +1,5 @@
 # Ignore Mac system files
-.DS_store
+.DS_Store
 
 # Ignore node_modules folder
 node_modules
@@ -12,9 +12,6 @@ node_modules
 
 # Ignore SASS config files
 .sass-cache
-
-# Ignore Checkpoints
-**/*.ipynb_checkpoints/
 
 # Ignore Python cache files
 __pycache__/
