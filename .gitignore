@@ -32,9 +32,6 @@ venv/
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
-# Ignore Jupyter Notebook files
-*.ipynb
-
 # Ignore data files not in the core project data
 /data/raw/
 /data/processed/
