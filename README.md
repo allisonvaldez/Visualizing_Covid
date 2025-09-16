@@ -20,4 +20,4 @@ This project explores COVID-19 data from the World Health Organization (WHO), an
 * Choropleth
 
 ## Contact
-* Feel free to contact team leads with any questions or if you are interested in contributing!
+If there are any questions or concerns the author may be contacted to discuss analysis and methodology.
