@@ -1,46 +1,81 @@
-# 🦠 Visualizing COVID‑19 Data (Python + Pandas + Matplotlib)
+# 🗳️ 2012 FEC Election Data Analysis (Python + Pandas)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-An interactive data exploration project that analyzes and visualizes COVID‑19 trends using **Python, Pandas, and Matplotlib**.  
-This project focuses on transforming real‑world public health data into clear, meaningful visual insights — ideal for demonstrating analytical thinking, data processing skills, and clean, maintainable code.
+An exploratory data analysis project examining **Federal Election Commission (FEC)** contribution data from the 2012 U.S. presidential election.  
+This project uses **Python, Pandas, and Matplotlib** to clean, transform, and visualize political donation patterns across candidates, occupations, and geographic regions.
+
+The goal is to turn a large, messy real‑world dataset into clear insights about how money flowed into the 2012 election.
 
 ---
 
 ## 🔍 Overview
 
-The goal of this project is to understand how COVID‑19 spread over time by:
+This project explores questions such as:
 
-- Cleaning and transforming raw datasets  
-- Analyzing infection and mortality trends  
-- Visualizing patterns across time and geography  
-- Communicating insights through clear, readable charts  
+- Which candidates received the most contributions  
+- How donation amounts varied by occupation and employer  
+- Geographic patterns in political giving  
+- How small vs. large donors differed across campaigns  
 
-This project highlights strong fundamentals in **data analysis**, **Python scripting**, and **visual communication**.
+The analysis demonstrates strong fundamentals in **data cleaning**, **aggregation**, **visualization**, and **storytelling with data**.
 
 ---
 
 ## 📊 Features
 
-### 🧹 Data Processing
-- Loaded and cleaned real COVID‑19 datasets  
-- Handled missing values and inconsistent formatting  
-- Aggregated data by date, region, and case type  
-- Computed rolling averages for trend smoothing  
+### 🧹 Data Cleaning & Preparation
+- Loaded and cleaned raw FEC contribution data  
+- Standardized employer and occupation fields  
+- Removed invalid or incomplete entries  
+- Converted monetary values and dates into usable formats  
 
-### 📈 Visualizations
-- Line charts showing case and death trends over time  
-- Comparative plots across regions  
-- Highlighted peaks, surges, and long‑term patterns  
-- Color‑coded, readable charts designed for clarity  
+### 📈 Analysis & Visualizations
+- Total contributions by candidate  
+- Top occupations and employers for each campaign  
+- Distribution of donation amounts  
+- Geographic trends using state‑level aggregation  
+- Clear, well‑labeled charts designed for readability  
 
-### 🧠 Analysis
-- Identified major waves and inflection points  
-- Compared infection rates across different time periods  
-- Explored relationships between cases and mortality  
+---
+
+## 🔑 Key Findings
+
+### 🗳️ Candidate Contribution Totals
+- Barack Obama and Mitt Romney received the majority of individual contributions in the 2012 election cycle.  
+- Romney’s campaign attracted more large‑dollar donations, while Obama received a higher volume of small‑dollar contributions.
+
+### 💼 Occupation & Industry Trends
+- High‑earning professions such as finance, investment, law, and consulting contributed disproportionately to Romney.  
+- Education, healthcare, and public‑sector workers contributed more frequently to Obama.  
+- “Retired” and “Self‑Employed” were among the largest donor categories overall.
+
+### 🏢 Employer Patterns
+- Major financial institutions and corporate employers leaned toward Romney.  
+- Universities, hospitals, and tech‑adjacent employers leaned toward Obama.  
+- Donation patterns reflected clear industry‑level political alignment.
+
+### 💵 Donation Amount Behavior
+- Obama’s donor base included more small‑dollar contributions (under $200).  
+- Romney’s donor base skewed toward larger contributions, often $1,000+.  
+- The distribution of donation amounts revealed distinct fundraising strategies.
+
+### 🌎 Geographic Insights
+- Coastal states such as California, New York, and Massachusetts contributed heavily to Obama.  
+- Southern and Midwestern states contributed more to Romney.  
+- State‑level aggregation highlighted clear regional political divides.
+
+### 📈 Fundraising Peaks
+- Both campaigns saw donation spikes around debates, primaries, and major campaign events.  
+- Obama’s fundraising was more consistent month‑to‑month, while Romney’s showed sharper peaks.
+
+### 🧹 Data Quality Observations
+- Employer and occupation fields required extensive cleaning due to inconsistent formatting.  
+- Many entries needed correction or removal (e.g., “INFORMATION REQUESTED,” “NONE,” “RETIRED”).  
+- Normalizing these fields significantly improved the accuracy of occupation and employer analysis.
 
 ---
 
@@ -56,13 +91,13 @@ This project highlights strong fundamentals in **data analysis**, **Python scrip
 ## 📁 Project Structure
 
 ```
-Visualizing_Covid/
+2012_FEC/
 │
 ├── data/
-│   └── covid_data.csv
+│   └── fec_2012.csv
 │
 ├── notebooks/
-│   └── covid_analysis.ipynb
+│   └── fec_analysis.ipynb
 │
 └── README.md
 ```
@@ -73,8 +108,8 @@ Visualizing_Covid/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/allisonvaldez/Visualizing_Covid.git
-cd Visualizing_Covid
+git clone https://github.com/allisonvaldez/2012_FEC.git
+cd 2012_FEC
 ```
 
 ### 2. Install dependencies
@@ -84,29 +119,18 @@ pip install pandas matplotlib
 
 ### 3. Open the notebook
 ```bash
-jupyter notebook notebooks/covid_analysis.ipynb
+jupyter notebook notebooks/fec_analysis.ipynb
 ```
-
----
-
-## 📌 Example Visualizations
-
-- Daily new cases over time  
-- Rolling averages to smooth noisy data  
-- Comparative regional trends  
-- Mortality vs. infection curves  
-
-*(Visuals appear inside the Jupyter notebook.)*
 
 ---
 
 ## 🧠 What I Learned
 
-- How to clean and transform real‑world datasets  
-- How to structure analysis code for readability  
+- How to clean and standardize large, messy real‑world datasets  
+- How to aggregate and analyze political contribution data  
 - How to design clear, informative visualizations  
 - How to communicate insights through data storytelling  
-- How to work iteratively in a Jupyter Notebook environment  
+- How to structure a reproducible analysis workflow  
 
 ---
 
@@ -114,8 +138,8 @@ jupyter notebook notebooks/covid_analysis.ipynb
 
 - Add interactive charts using Plotly  
 - Build a small dashboard (Streamlit or Flask)  
-- Automate data updates from public APIs  
 - Add geographic heatmaps  
+- Compare multiple election cycles  
 
 ---
 
@@ -124,4 +148,4 @@ jupyter notebook notebooks/covid_analysis.ipynb
 **Allison Valdez**  
 Full‑Stack Software Engineer  
 GitHub: https://github.com/allisonvaldez  
-LinkedIn: https://linkedin.com/in/yourusername](https://www.linkedin.com/in/alyv/
+LinkedIn: https://www.linkedin.com/in/alyv/
