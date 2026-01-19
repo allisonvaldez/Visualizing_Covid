@@ -1,81 +1,60 @@
-# 🗳️ 2012 FEC Election Data Analysis (Python + Pandas)
+# 🦠 Visualizing COVID‑19 Data (Python + Pandas + Matplotlib)
 
+#### -- Project Status: Completed
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-An exploratory data analysis project examining **Federal Election Commission (FEC)** contribution data from the 2012 U.S. presidential election.  
-This project uses **Python, Pandas, and Matplotlib** to clean, transform, and visualize political donation patterns across candidates, occupations, and geographic regions.
+## Project Intro/Objective
 
-The goal is to turn a large, messy real‑world dataset into clear insights about how money flowed into the 2012 election.
-
+This project explores COVID-19 data from the World Health Organization (WHO), and visualizes it using Plotly Express in Python. We explore the data in more than a dozen bar charts, line graphs, bubble charts, scatter plots, word clouds, and natural earth projections. This was a personal endevour as I was interested in what the COVID data was as in its various forms--hoping this would depart knowledge for further analysis for research. I saught to provide insight, although it is 20/20 vision in hindsight, how COVID impacted countless people as it moved throughout the world. The data examines and compares amongst countries: case numbers, the causes of death, case fatality rate, recovery rates, testing rates, and death rates. In closing, it sharpened my skillset to summerize modeling, provide simulations, and thorough analysis.
 ---
 
+### Methods Used
+* Inferential Statistics
+* Data Visualization
 ## 🔍 Overview
 
-This project explores questions such as:
+### Technologies
+* Plotly
+* Python
+* Matplotlib
+* Pandas
+* Jupyter Notebook 
+* Wordcloud
+* Choropleth
+The goal of this project is to understand how COVID‑19 spread over time by:
 
-- Which candidates received the most contributions  
-- How donation amounts varied by occupation and employer  
-- Geographic patterns in political giving  
-- How small vs. large donors differed across campaigns  
+## Contact
+If there are any questions or concerns the author may be contacted to discuss analysis and methodology.
+- Cleaning and transforming raw datasets  
+- Analyzing infection and mortality trends  
+- Visualizing patterns across time and geography  
+- Communicating insights through clear, readable charts  
 
-The analysis demonstrates strong fundamentals in **data cleaning**, **aggregation**, **visualization**, and **storytelling with data**.
+This project highlights strong fundamentals in **data analysis**, **Python scripting**, and **visual communication**.
 
 ---
 
 ## 📊 Features
 
-### 🧹 Data Cleaning & Preparation
-- Loaded and cleaned raw FEC contribution data  
-- Standardized employer and occupation fields  
-- Removed invalid or incomplete entries  
-- Converted monetary values and dates into usable formats  
+### 🧹 Data Processing
+- Loaded and cleaned real COVID‑19 datasets  
+- Handled missing values and inconsistent formatting  
+- Aggregated data by date, region, and case type  
+- Computed rolling averages for trend smoothing  
 
-### 📈 Analysis & Visualizations
-- Total contributions by candidate  
-- Top occupations and employers for each campaign  
-- Distribution of donation amounts  
-- Geographic trends using state‑level aggregation  
-- Clear, well‑labeled charts designed for readability  
+### 📈 Visualizations
+- Line charts showing case and death trends over time  
+- Comparative plots across regions  
+- Highlighted peaks, surges, and long‑term patterns  
+- Color‑coded, readable charts designed for clarity  
 
----
-
-## 🔑 Key Findings
-
-### 🗳️ Candidate Contribution Totals
-- Barack Obama and Mitt Romney received the majority of individual contributions in the 2012 election cycle.  
-- Romney’s campaign attracted more large‑dollar donations, while Obama received a higher volume of small‑dollar contributions.
-
-### 💼 Occupation & Industry Trends
-- High‑earning professions such as finance, investment, law, and consulting contributed disproportionately to Romney.  
-- Education, healthcare, and public‑sector workers contributed more frequently to Obama.  
-- “Retired” and “Self‑Employed” were among the largest donor categories overall.
-
-### 🏢 Employer Patterns
-- Major financial institutions and corporate employers leaned toward Romney.  
-- Universities, hospitals, and tech‑adjacent employers leaned toward Obama.  
-- Donation patterns reflected clear industry‑level political alignment.
-
-### 💵 Donation Amount Behavior
-- Obama’s donor base included more small‑dollar contributions (under $200).  
-- Romney’s donor base skewed toward larger contributions, often $1,000+.  
-- The distribution of donation amounts revealed distinct fundraising strategies.
-
-### 🌎 Geographic Insights
-- Coastal states such as California, New York, and Massachusetts contributed heavily to Obama.  
-- Southern and Midwestern states contributed more to Romney.  
-- State‑level aggregation highlighted clear regional political divides.
-
-### 📈 Fundraising Peaks
-- Both campaigns saw donation spikes around debates, primaries, and major campaign events.  
-- Obama’s fundraising was more consistent month‑to‑month, while Romney’s showed sharper peaks.
-
-### 🧹 Data Quality Observations
-- Employer and occupation fields required extensive cleaning due to inconsistent formatting.  
-- Many entries needed correction or removal (e.g., “INFORMATION REQUESTED,” “NONE,” “RETIRED”).  
-- Normalizing these fields significantly improved the accuracy of occupation and employer analysis.
+### 🧠 Analysis
+- Identified major waves and inflection points  
+- Compared infection rates across different time periods  
+- Explored relationships between cases and mortality  
 
 ---
 
@@ -91,13 +70,13 @@ The analysis demonstrates strong fundamentals in **data cleaning**, **aggregatio
 ## 📁 Project Structure
 
 ```
-2012_FEC/
+Visualizing_Covid/
 │
 ├── data/
-│   └── fec_2012.csv
+│   └── covid_data.csv
 │
 ├── notebooks/
-│   └── fec_analysis.ipynb
+│   └── covid_analysis.ipynb
 │
 └── README.md
 ```
@@ -108,8 +87,8 @@ The analysis demonstrates strong fundamentals in **data cleaning**, **aggregatio
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/allisonvaldez/2012_FEC.git
-cd 2012_FEC
+git clone https://github.com/allisonvaldez/Visualizing_Covid.git
+cd Visualizing_Covid
 ```
 
 ### 2. Install dependencies
@@ -119,18 +98,29 @@ pip install pandas matplotlib
 
 ### 3. Open the notebook
 ```bash
-jupyter notebook notebooks/fec_analysis.ipynb
+jupyter notebook notebooks/covid_analysis.ipynb
 ```
+
+---
+
+## 📌 Example Visualizations
+
+- Daily new cases over time  
+- Rolling averages to smooth noisy data  
+- Comparative regional trends  
+- Mortality vs. infection curves  
+
+*(Visuals appear inside the Jupyter notebook.)*
 
 ---
 
 ## 🧠 What I Learned
 
-- How to clean and standardize large, messy real‑world datasets  
-- How to aggregate and analyze political contribution data  
+- How to clean and transform real‑world datasets  
+- How to structure analysis code for readability  
 - How to design clear, informative visualizations  
 - How to communicate insights through data storytelling  
-- How to structure a reproducible analysis workflow  
+- How to work iteratively in a Jupyter Notebook environment  
 
 ---
 
@@ -138,8 +128,8 @@ jupyter notebook notebooks/fec_analysis.ipynb
 
 - Add interactive charts using Plotly  
 - Build a small dashboard (Streamlit or Flask)  
+- Automate data updates from public APIs  
 - Add geographic heatmaps  
-- Compare multiple election cycles  
 
 ---
 
