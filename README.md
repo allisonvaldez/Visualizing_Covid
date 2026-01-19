@@ -1,66 +1,66 @@
-# 🦠 Visualizing COVID‑19 Data (Python + Pandas + Matplotlib)
+# 🦠 COVID‑19 Data Analysis (Python + Pandas)
 
-#### -- Project Status: Completed
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+Python Pandas Matplotlib Status
 
-## Project Intro/Objective
+An exploratory data analysis project examining real COVID‑19 case and death data from the pandemic.  
+This project uses Python, Pandas, and Matplotlib to clean, transform, and visualize trends in COVID‑19 spread across time and regions.
 
-This project explores COVID-19 data from the World Health Organization (WHO), and visualizes it using Plotly Express in Python. We explore the data in more than a dozen bar charts, line graphs, bubble charts, scatter plots, word clouds, and natural earth projections. This was a personal endevour as I was interested in what the COVID data was as in its various forms--hoping this would depart knowledge for further analysis for research. I saught to provide insight, although it is 20/20 vision in hindsight, how COVID impacted countless people as it moved throughout the world. The data examines and compares amongst countries: case numbers, the causes of death, case fatality rate, recovery rates, testing rates, and death rates. In closing, it sharpened my skillset to summerize modeling, provide simulations, and thorough analysis.
+The goal is to turn a large, messy real‑world dataset into clear insights about how COVID‑19 evolved and affected different areas.
 
 ---
 
-### Methods Used
-* Inferential Statistics
-* Data Visualization
 ## 🔍 Overview
 
-### Technologies
-* Plotly
-* Python
-* Matplotlib
-* Pandas
-* Jupyter Notebook 
-* Wordcloud
-* Choropleth
-The goal of this project is to understand how COVID‑19 spread over time by:
+This project explores questions such as:
 
-## Contact
-If there are any questions or concerns the author may be contacted to discuss analysis and methodology.
-- Cleaning and transforming raw datasets  
-- Analyzing infection and mortality trends  
-- Visualizing patterns across time and geography  
-- Communicating insights through clear, readable charts  
+- How COVID‑19 cases and deaths changed over time  
+- Which regions experienced the largest spikes  
+- How case surges compared to death surges  
+- What patterns emerged across different states or time periods  
 
-This project highlights strong fundamentals in **data analysis**, **Python scripting**, and **visual communication**.
+The analysis demonstrates strong fundamentals in data cleaning, aggregation, visualization, and data storytelling.
 
 ---
 
 ## 📊 Features
 
-### 🧹 Data Processing
-- Loaded and cleaned real COVID‑19 datasets  
+### 🧹 Data Cleaning & Preparation
+- Loaded and cleaned raw COVID‑19 case and death data  
 - Handled missing values and inconsistent formatting  
-- Aggregated data by date, region, and case type  
-- Computed rolling averages for trend smoothing  
+- Converted dates and numeric fields into usable formats  
+- Structured the dataset for time‑series analysis  
 
-### 📈 Visualizations
-- Line charts showing case and death trends over time  
-- Comparative plots across regions  
-- Highlighted peaks, surges, and long‑term patterns  
-- Color‑coded, readable charts designed for clarity  
+### 📈 Analysis & Visualizations
+- Daily and cumulative case trends  
+- Daily and cumulative death trends  
+- Comparison of case vs. death trajectories  
+- State‑level or region‑level aggregation  
+- Clear, well‑labeled charts designed for readability  
 
-### 🧠 Analysis
-- Identified major waves and inflection points  
-- Compared infection rates across different time periods  
-- Explored relationships between cases and mortality  
+---
+
+## 🔑 Key Findings
+
+### 📈 Case & Death Trends
+- COVID‑19 cases and deaths followed clear wave patterns with major surges during widely reported outbreak periods.  
+- Case spikes consistently preceded death spikes, showing a noticeable lag between infection and severe outcomes.  
+
+### 🌎 Regional Patterns
+- Different states and regions showed distinct trajectories depending on population density, timing of outbreaks, and public‑health responses.  
+- Some regions experienced sharper, more concentrated peaks, while others had prolonged periods of elevated cases.  
+
+### 📉 Distribution & Behavior
+- Visualizations revealed how quickly cases accelerated during peak periods.  
+- Death trends were smoother but strongly correlated with earlier case surges.  
+
+### 🧹 Data Quality Observations
+- COVID‑19 reporting varied across states, requiring careful cleaning.  
+- Some dates and values needed correction or removal due to inconsistencies.  
+- Normalizing fields improved the accuracy of comparisons across regions.  
 
 ---
 
 ## 🧪 Tech Stack
-
 - **Python**  
 - **Pandas** for data cleaning and transformation  
 - **Matplotlib** for visualization  
@@ -90,7 +90,6 @@ Visualizing_Covid/
 ```bash
 git clone https://github.com/allisonvaldez/Visualizing_Covid.git
 cd Visualizing_Covid
-```
 
 ### 2. Install dependencies
 ```bash
@@ -104,24 +103,13 @@ jupyter notebook notebooks/covid_analysis.ipynb
 
 ---
 
-## 📌 Example Visualizations
-
-- Daily new cases over time  
-- Rolling averages to smooth noisy data  
-- Comparative regional trends  
-- Mortality vs. infection curves  
-
-*(Visuals appear inside the Jupyter notebook.)*
-
----
-
 ## 🧠 What I Learned
 
 - How to clean and transform real‑world datasets  
 - How to structure analysis code for readability  
 - How to design clear, informative visualizations  
 - How to communicate insights through data storytelling  
-- How to work iteratively in a Jupyter Notebook environment  
+- How to work iteratively in a Jupyter Notebook environment
 
 ---
 
@@ -130,7 +118,7 @@ jupyter notebook notebooks/covid_analysis.ipynb
 - Add interactive charts using Plotly  
 - Build a small dashboard (Streamlit or Flask)  
 - Automate data updates from public APIs  
-- Add geographic heatmaps  
+- Add geographic heatmaps
 
 ---
 
